@@ -1,0 +1,51 @@
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.skills-slider {
+  background: #111111;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+}
+.skills-slider::before, .skills-slider::after {
+  background: linear-gradient(to right, #111111 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.skills-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.skills-slider::before {
+  left: 0;
+  top: 0;
+}
+.skills-slider .slide-track {
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.skills-slider .slide {
+  height: 100px;
+  width: 250px;
+}/*# sourceMappingURL=styles.css.map */
