@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Gerardo P.A | Portafolio</title>
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="sass/styles.css">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../sass/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -16,26 +16,26 @@
     </head>
     <body>
         
-        <!-- BARRA DE SCROLL -->
-        <div id="progressBar"></div>
-        <div id="scrollPath"></div>
+    <!-- BARRA DE SCROLL -->
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+    
+    <!-- LOGO -->
+    <a href="#1"><img id="logo" class="logo" src="../img/logo.png" alt="G roja con azul"></a>
+    
+    <!-- MENU -->
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <nav id="navbar" class="navbar">
+        <ul id="navbarLinks" class="navbar__links">
+            <li class="navbar__links__list" data-text="HOLA"><a class="navbar__links__link" href="#1">HOLA</a></li>
+            <li data-text="YO, YO Y YO"><a class="navbar__links__link" href="#2">YO, YO Y YO</a></li>
+            <li data-text="HABILIDADES"><a class="navbar__links__link" href="#3">HABILIDADES</a></li>
+            <li data-text="PORTAFOLIO"><a class="navbar__links__link" href="#4">PORTAFOLIO</a></li>
+            <li data-text="CONTACTO"><a class="navbar__links__link" href="#5">CONTACTO</a></li>
+        </ul>
+    </nav>
         
-        <!-- LOGO -->
-        <a href="#1"><img id="logo" class="logo" src="../img/logo.png" alt="G roja con azul"></a>
-        
-        <!-- MENU -->
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <nav id="navbar" class="navbar">
-            <ul id="navbarLinks" class="navbar__links">
-                <li class="navbar__links__list" data-text="HOLA"><a class="navbar__links__link" href="#1">HOLA</a></li>
-                <li data-text="YO, YO Y YO"><a class="navbar__links__link" href="#2">YO, YO Y YO</a></li>
-                <li data-text="HABILIDADES"><a class="navbar__links__link" href="#3">HABILIDADES</a></li>
-                <li data-text="PORTAFOLIO"><a class="navbar__links__link" href="#4">PORTAFOLIO</a></li>
-                <li data-text="CONTACTO"><a class="navbar__links__link" href="#5">CONTACTO</a></li>
-            </ul>
-        </nav>
-        
-        <!-- HEADER -->
+    <!-- HEADER -->
     <header class="header">
         <!-- HEADER__HERO -->
         <div class="header__hero">
@@ -55,9 +55,9 @@
     <!-- MAIN -->
     <main class="main">
         <!-- MAIN__ABOUT -->
-        <section id="2" class="main__about container">
+        <section class="main__about container">
             <div class="main__about__container">
-                <img src="../img/about.jpg" class="main__about__container__img">
+                <img src="../img/about.jpg" id="2" class="main__about__container__img">
                 <p class="main__about__container__name">GERARDO PEREZ AGUERRE</p>
                 <h2 class="main__about__container__title">Yo, yo y yo</h2>
                 <p class="main__about__container__txt">
@@ -70,7 +70,7 @@
                 <p class="main__about__container__txt">
                     Me encanta la filosofia, la cual ha impactado fuertemente en mi vida al poder enfocarme en lo que puedo controlar y dejando de lado lo que no. De este modo he logrado ser mas organizado ya sea en equipo o en solitario, prestar atencion a los detalles, aprender cada dia algo nuevo y ademas de siempre ir en busca de nuevos retos y projectos ambiciosos junto a personas positivas con ganas de seguir creciendo tanto personal como profesionalmente.
                 </p>
-                <div class="main__about__container__btn-cv"><a href="">Descargar CV</a></div>
+                <div class="main__about__container__btn-cv"><a href="" target="_blank">Descargar CV</a></div>
             </div>
         </section>
         <!-- MAIN__SKILLS -->
@@ -78,7 +78,7 @@
             <div class="main__skills__container">
                 <h2 class="main__skills__container__title">Habilidades & Experiencia</h2>
                 <p class="main__skills__container__txt">Creo sitios web flexibles, fáciles de usar y trato de usar las mejores prácticas posibles a la hora de desarrollar. El área principal por ahora de mi experiencia es el desarrollo front-end, HTML, CSS, JS, ademas de querer aprender REACT, Backend y Bases de datos para volverme poco a poco en un Full Stack Developer.</p>
-                <p class="main__skills__container__txt">Visita mi <a class="main__skills__container__txt__link" href="https://www.linkedin.com/in/gerardopa/">LinkedIn</a> para mas detalles o si lo deseas puedes <a class="main__skills__container__txt__link" href="#5">contactarme</a>.</p>
+                <p class="main__skills__container__txt">Visita mi <a class="main__skills__container__txt__link" href="https://www.linkedin.com/in/gerardopa/" target="_blank">LinkedIn</a> para mas detalles o si lo deseas puedes <a class="main__skills__container__txt__link" href="#5">contactarme</a>.</p>
                 <!-- SLIDER AUTOMATICO -->
                 <div class="skills-slider">
                     <div class="slide-track">
@@ -191,73 +191,59 @@
             <!-- MAIN__PORTFOLIO__CONTENT -->
             <div class="main__portfolio__content">
                 <h2 class="main__portfolio__content__title">Projectos</h2>
-                <p class="main__portfolio__content__txt">Algunas de las cosas en las que he trabajado.</p>
+                <p class="main__portfolio__content__txt">Para observar algunas de las cosas en las que he trabajado, puedes pasar tu mano por encima de estas tarjetas interactivas.</p>
             </div>
             <!-- MAIN__PORTFOLIO__CARDS -->
-            <div class="slider owl-carousel">
-                <div class="card">
-                    <div class="img">
-                        <img src="../img/restaurantic.jpg" alt="Pagina de un restaurante">
-                    </div>
-                    <div class="content">
-                        <div class="title">
-                            Restaurantic
-                        </div>
-                        <p>
-                            De las primeras web que he construido. En este caso con todas las paginas funcionando.
-                        </p>
-                        <div class="btn">
-                            <button><a href="https://uzilekz.github.io/Restaurantic/">Ver Projecto</a>
+            <div class="cards-container">
+                <div class="main__portfolio__cards">
+                    <div class="main__portfolio__cards__card">
+                        <div class="main__portfolio__cards__card__img card-img-1"></div>
+                        <div class="main__portfolio__cards__card__content">
+                            <h3 class="main__portfolio__cards__card__content__title">Restaurantic</h3>
+                            <p class="main__portfolio__cards__card__content__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero totam sunt tenetur in nam illum .</p>
+                            <a href="https://uzilekz.github.io/Restaurantic/index.html" target="_blank" class="main__portfolio__cards__card__content__link">Ver Projecto</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="../img/trent-walton.png" alt="Pagina de una banda de musica">
-                    </div>
-                    <div class="content">
-                        <div class="title">
-                            Trent Walton
+                    <div class="main__portfolio__cards__card">
+                        <div class="main__portfolio__cards__card__img card-img-2"></div>
+                        <div class="main__portfolio__cards__card__content">
+                            <h3 class="main__portfolio__cards__card__content__title">Trent Walton</h3>
+                            <p class="main__portfolio__cards__card__content__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero totam sunt tenetur in nam illum .</p>
+                            <a href="https://uzilekz.github.io/Trent-Walton/" target="_blank" class="main__portfolio__cards__card__content__link">Ver Projecto</a>
                         </div>
-                        <p>
-                            Para poner a prueba mis habilidades he reconstruido la pagina de Trent Walton.
-                        </p>
-                        <div class="btn">
-                            <button><a href="https://uzilekz.github.io/Trent-Walton/">Ver Projecto</a></button>
+                    </div>
+                    <div class="main__portfolio__cards__card">
+                        <div class="main__portfolio__cards__card__img card-img-3"></div>
+                        <div class="main__portfolio__cards__card__content">
+                            <h3 class="main__portfolio__cards__card__content__title">V&A</h3>
+                            <p class="main__portfolio__cards__card__content__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero totam sunt tenetur in nam illum .</p>
+                            <a href="https://uzilekz.github.io/V-and-A/" target="_blank" class="main__portfolio__cards__card__content__link">Ver Projecto</a>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="../img/v&a.png" alt="Pagina de un museo">
-                    </div>
-                    <div class="content">
-                        <div class="title">
-                            V&A
-                        </div>
-                        <p>
-                            Al aprender Flexbox, me dispuse a practicarlo y salio esta pagina.
-                        </p>
-                        <div class="btn">
-                            <button><a href="https://uzilekz.github.io/V-and-A/">Ver Projecto</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="../img/artist-page.png" alt="Pagina de un musico">
-                    </div>
-                    <div class="content">
-                        <div class="title">
-                            Armando Music
-                        </div>
-                        <p>
-                            Una sencilla landing page hecha a partir de CSS Grid de pies a cabeza.
-                        </p>
-                        <div class="btn">
-                            <button><a href="https://uzilekz.github.io/Artist-Page/">Ver Projecto</a></button>
-                        </div>
-                    </div>
+            </div>
+        </section>
+        <!-- MAIN__CONTACT -->
+        <section id="5" class="main__contact container">
+            <!-- MAIN__CONTACT__FORM -->
+            <h2>MANDA UN MENSAJE</h2>
+            <div id="wrap">
+                <br><br><br>
+                <div id="form-wrap">
+                    <form action="">
+                        <p>HOLA GERARDO,</p>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" id="message" value="Tu Mensaje"></textarea>
+                        
+                        <p>DE TU AMIGO,</p>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" value="">
+                        
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" value="">
+
+                        <input type="submit" name="submit" value="-ENVIAR-">
+                    </form>
                 </div>
             </div>
         </section>
@@ -265,10 +251,28 @@
 
     <!-- FOOTER -->
     <footer class="footer">
+        <span>Hecho con </span>
+        <div class="love">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 92 72" enable-background="new 0 0 92 72" xml:space="preserve" aria-labelledby="heartTitle" role="img">
+                <title id="heartTitle">Un corazon lleno de amor.</title>
+                <path fill="#ff005d" d="M82.32,7.888c-8.359-7.671-21.91-7.671-30.271,0l-5.676,5.21l-5.678-5.21c-8.357-7.671-21.91-7.671-30.27,0 c-9.404,8.631-9.404,22.624,0,31.255l35.947,32.991L82.32,39.144C91.724,30.512,91.724,16.52,82.32,7.888z"></path>
+            </svg>
+        </div>
+        <span>por <a href="https://github.com/Uzilekz" target="_blank">@Uzilekz</a></span>
     </footer>
 
     <!-- types.js para escribir automaticamente en el hero -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- Animacion de las CARDS -->
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".main__portfolio__cards__card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": .4,
+	});
+    </script>
 </body>
 </html>
