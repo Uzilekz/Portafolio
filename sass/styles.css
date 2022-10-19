@@ -15,20 +15,20 @@
   }
 }
 .skills-slider {
-  background: #111111;
+  background: transparent;
   height: 150px;
-  margin: auto;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
   width: 800px;
 }
 .skills-slider::before, .skills-slider::after {
-  background: linear-gradient(to right, #111111 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgb(17, 17, 17) 0%, transparent 30%);
   content: "";
   height: 100px;
   position: absolute;
   width: 250px;
-  z-index: 250;
+  z-index: 50;
 }
 .skills-slider::after {
   right: 0;

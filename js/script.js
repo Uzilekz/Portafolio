@@ -6,6 +6,14 @@ window.onscroll = function(){
     progress.style.height = progressHeight + "%";
 }
 
+// LETRAS SALTARINAS
+$(".rubberBand").bind("webkitAnimationEnd mozAnimationEnd animationend", function(){
+    $(this).removeClass("animated")  
+})  
+$(".rubberBand").hover(function(){
+    $(this).addClass("animated");        
+})
+
 // Girar LOGO al clickear
 document.querySelector("#logo").onclick = () =>{
     document.querySelector("#logo").classList.toggle("logoSpin")
@@ -30,6 +38,6 @@ let typingEffect = new Typed(".multiText", {
     strings : ["Gerardo.", "Humano.", "Maquina."],
     typeSpeed : 100,
     backSpeed : 150,
-    backDelay : 2000,
+    backDelay : 3500,
     loop : true
 })
