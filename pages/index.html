@@ -307,19 +307,19 @@
             <div id="wrap">
                 <br><br><br>
                 <div id="form-wrap">
-                    <form action="">
+                    <form action="https://formspree.io/f/xeqdllzb" method="POST" autocomplete="off">
                         <p>HOLA GERARDO,</p>
                         <label for="message">Mensaje:</label>
-                        <textarea name="message" id="message" value="Tu Mensaje"></textarea>
+                        <textarea name="message" id="message" value="" required></textarea>
                         
                         <p>DE TU AMIGO,</p>
                         <label for="name">Nombre:</label>
-                        <input type="text" name="name" id="name" value="">
+                        <input type="text" name="name" id="name" value="" required></input>
                         
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" value="">
-
-                        <input type="submit" name="submit" value="ENVIAR CARTA!">
+                        <input type="email" name="email" id="email" value="" required></input>
+                        
+                        <input type="submit" value="ENVIAR CARTA!">
                     </form>
                 </div>
             </div>
@@ -347,7 +347,7 @@
     <script>
         ScrollReveal({
             reset: true,
-            distance: "77px",
+            distance: "90px",
             duration: 2000,
             delay: 0
         })
@@ -355,7 +355,7 @@
         // HEADER
         ScrollReveal().reveal(".topline, .header__hero__texts h1", {origin: "left", interval: 777});
         // ABOUT
-        ScrollReveal().reveal(".main__about__container__img, .main__about__container__name", {origin: "top"});
+        ScrollReveal().reveal(".main__about__container__name, .main__about__container__img", {origin: "top"});
         ScrollReveal().reveal(".main__about__container__txt", {origin: "right", interval: 400});
         ScrollReveal().reveal(".main__about__container__btn-cv", {origin: "bottom", delay: 400});
         ScrollReveal().reveal(".main__about__container__title", {origin: "left", interval: 600});
@@ -365,10 +365,10 @@
         ScrollReveal().reveal(".skills-slider", {origin: "bottom", interval: 400});
         // PORTFOLIO
         ScrollReveal().reveal(".main__portfolio__content__title", {origin: "top"});
-        ScrollReveal().reveal(".main__portfolio__cards__card", {origin: "bottom", interval: 250});
+        ScrollReveal().reveal(".main__portfolio__cards__card", {origin: "bottom", interval: 300});
         // CONTACT
         ScrollReveal().reveal(".main__contact h2", {origin: "top"});
-        ScrollReveal().reveal(".main__contact #wrap", {origin: "bottom", distance: "150px", delay: 666});
+        ScrollReveal().reveal(".main__contact #wrap", {origin: "bottom"});
     </script>
     <!-- types.js para escribir automaticamente en el hero -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

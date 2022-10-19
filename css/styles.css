@@ -639,6 +639,22 @@ background: #00ffe7;
     padding-top: 14px;
     outline: none;
 }
+.main__contact input[type=email] {
+    outline: none;
+    background: rgb(222, 222, 222);
+}
+.main__contact input[type=email], textarea {
+    background: rgb(222, 222, 222);
+    font: 14px normal uppercase, arial, serif;
+    color: rgb(63, 63, 63);
+    width: 380px;
+    height: 37px;
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid #f8f5f1;
+    border-radius: 5px;
+    resize: none;
+}
 .main__contact #form-wrap input[type=submit] {
     position: relative;
     display: block;
