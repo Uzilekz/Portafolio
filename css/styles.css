@@ -897,7 +897,7 @@ and (max-device-width : 37.5em) {
 
     .main__about__container__name {
         font-size: .8em;
-        line-height: 1.5;
+        line-height: 1.45;
     }
 
     .main__about__container__title, .main__skills__container__title {
@@ -905,7 +905,7 @@ and (max-device-width : 37.5em) {
     }
 
     h2, h3, h4, h5, h6 {
-        font-size: 1.75em;
+        font-size: 1.6em;
     }
 
     .main__about__container__btn-cv a {
