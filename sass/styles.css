@@ -48,4 +48,11 @@
 .skills-slider .slide {
   height: 100px;
   width: 250px;
+}
+
+@media only screen and (max-device-width: 900px) {
+  .skills-slider {
+    height: 150px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

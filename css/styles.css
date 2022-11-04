@@ -2,9 +2,13 @@
 
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
     user-select: none;
     font-family: 'Space Mono', monospace;
     color: rgb(245, 245, 245);
@@ -152,7 +156,7 @@ span.rubberBand.animated {
     width: 70px;
     line-height: 70px;
     border-radius: 50%;
-    font-size:40px;
+    font-size: 40px;
     cursor: pointer;
     color: #00ffe7;
     text-align: center;
@@ -202,7 +206,7 @@ span.rubberBand.animated {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(245, 245, 245);
-    font-size: 8em;
+    font-size: 7em;
     font-weight: 700;
     pointer-events: none;
     opacity: 0;
@@ -237,7 +241,7 @@ nav ul:hover li a {
     opacity: 0;
 }
 .navbar a:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
     z-index: 1000;
     border: 3px solid #00ffe7;
     background: #ff3f81;
@@ -626,7 +630,7 @@ background: #00ffe7;
     background: rgb(222, 222, 222);
     font: 14px normal uppercase, arial, serif;
     color: rgb(63, 63, 63);
-    width: 380px;
+    width: 93%;
     height: 37px;
     padding: 0 10px;
     margin: 0 0 10px 0;
@@ -635,6 +639,7 @@ background: #00ffe7;
     resize: none;
 }
 .main__contact textarea {
+    width: 93%;
     height: 80px;
     padding-top: 14px;
     outline: none;
@@ -647,7 +652,7 @@ background: #00ffe7;
     background: rgb(222, 222, 222);
     font: 14px normal uppercase, arial, serif;
     color: rgb(63, 63, 63);
-    width: 380px;
+    width: 93%;
     height: 37px;
     padding: 0 10px;
     margin: 0 0 10px 0;
@@ -758,4 +763,174 @@ background: #00ffe7;
 .footer a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen 
+and (max-device-width : 56.25em) {
+    #logo {
+        top: 20px;
+        left: 20px;
+        width: 40px;
+    }
+
+    #menu-btn {
+        top: 5px;
+        right: 10px;
+        font-size: 35px;
+    }
+
+    .navbar li:before {
+        font-size: 2.5em;
+    }
+
+    .navbar a {
+        font-size: .9em;
+        padding: 25px 50px;
+    }
+    
+    .header__hero__texts .topline {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .header__hero__texts .topline::after {
+        height: 7px;
+        width: 7px;
+        bottom: 4px;
+    }
+    
+    .header__hero__texts h1 {
+        font-size: 4em;
+    }
+    
+    .header__hero__img {
+        left: 30%;
+    }
+
+    .main__about__container__name {
+        font-size: .8em;
+    }
+
+    .main__about__container__title, .main__skills__container__title {
+        margin-bottom: 20px;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-size: 2em;
+        letter-spacing: -3px;
+    }
+
+    .main__about__container__txt, .main__skills__container__txt {
+        line-height: 25px;
+        font-size: 1.1em;
+    }
+
+    .main__about__container__btn-cv a {
+        font-size: .9em;
+    }
+
+    .main__portfolio__cards__card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .main__portfolio__cards__card__content__title {
+        font-size: 1.5em;
+    }
+    .main__portfolio__cards__card__content__txt {
+        font-size: 1em;
+    }
+    .main__portfolio__cards__card__content__link {
+        padding: 10px 20px;
+        font-size: .9em;
+    }
+
+    .main__contact form {
+        width: 75%;
+    }
+
+    .main__contact input[type=email] {
+        width: 93%;
+    }
+}
+
+
+
+
+
+@media only screen 
+and (max-device-width : 37.5em) {
+    #logo {
+        width: 35px;
+    }
+
+    #menu-btn {
+        right: 0;
+        top: 0;
+        font-size: 35px;
+    }
+    
+    .header__hero__texts .topline {
+        padding-left: 25px;
+        font-size: 20px;
+    }
+
+    .header__hero__texts .topline::after {
+        height: 5px;
+        width: 5px;
+        bottom: 3px;
+    }
+    
+    .header__hero__texts h1 {
+        padding-left: 25px;
+        font-size: 3em;
+    }
+    
+    .header__hero__img {
+        left: 0;
+    }
+
+    .main__about__container__name {
+        font-size: .8em;
+        line-height: 1.5;
+    }
+
+    .main__about__container__title, .main__skills__container__title {
+        margin-bottom: 20px;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-size: 1.75em;
+    }
+
+    .main__about__container__btn-cv a {
+        font-size: .8em;
+        width: 150px;
+    }
+
+    .main__portfolio__cards__card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .main__portfolio__cards__card__content__title {
+        font-size: 1.4em;
+    }
+    .main__portfolio__cards__card__content__link {
+        padding: 10px 20px;
+        font-size: .8em;
+    }
+
+    .main__contact form {
+        width: 55%;
+    }
+
+    .main__contact #form-wrap input[type=submit] {
+        font-size: 22px;
+    }
 }
