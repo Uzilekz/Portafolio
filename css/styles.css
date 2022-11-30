@@ -516,12 +516,15 @@ nav ul:hover li a {
     background-image: url(../img/generacion-t.png);
 }
 .card-img-1 {
-    background-image: url(../img/restaurantic.jpg);
+    background-image: url(../img/los-colineros.png);
 }
 .card-img-2 {
-    background-image: url(../img/trent-walton.png);
+    background-image: url(../img/restaurantic.jpg);
 }
 .card-img-3 {
+    background-image: url(../img/trent-walton.png);
+}
+.card-img-4 {
     background-image: url(../img/v&a.png);
 }
 .main__portfolio__cards__card__content__title {
