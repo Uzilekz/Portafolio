@@ -9,7 +9,6 @@ html {
 
 body {
     overflow-x: hidden;
-    user-select: none;
     font-family: 'Space Mono', monospace;
     color: rgb(245, 245, 245);
     background-color: rgb(1, 1, 1);
@@ -41,6 +40,11 @@ h2, h3, h4, h5, h6 {
 }
 .hidden {
     display: none;
+}
+
+::selection {
+    color: #00e279;
+    background: rgba(37, 36, 36, .5);
 }
 
 /* SCROLLBAR */
@@ -347,7 +351,7 @@ nav ul:hover li a {
     background: linear-gradient(to top, transparent 77%, #010101 100%);
 }
 .main__about__container {
-    padding-top: 666px;
+    padding-top: 400px;
 }
 .main__about__container__img {
     width: 150px;
@@ -395,7 +399,7 @@ nav ul:hover li a {
 
 /* MAIN__SKILLS */
 .main__skills {
-    margin-top: 666px;
+    margin-top: 400px;
 }
 .main__skills__container {
     margin-bottom: 50px;
@@ -432,17 +436,44 @@ nav ul:hover li a {
     transform-origin: left;
     transform: scaleX(1);
 }
-/* SKILLS-SLIDER AUTOMATICO */
-.skills-slider .slide-track img {
-    display: block;
+/* MAIN__SKILLS__TECHNOLOGIES */
+.main__skills__technologies div {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.main__skills__technologies img {
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    width: 5em;
+    z-index: 100;
+}
+.main__skills__technologies h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: transparent;
+    z-index: 1;
+    box-shadow: 0 0 5px #00ffe7;
+    border-radius: 7px;
+    padding: .3rem 0;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 0px;
+    opacity: 0;
+    transform: translate(0px,-130px);
+    transition: transform .4s ease, opacity .4s ease;
+}
+.main__skills__technologies div:hover h3 {
+    opacity: 1;
+    transform: translate(0px,-150px);
 }
 
 /* MAIN__PORTFOLIO */
 .main__portfolio {
-    margin-top: 666px;
+    margin-top: 400px;
 }
 .main__portfolio__content {
     margin-bottom: 50px;
@@ -528,14 +559,14 @@ nav ul:hover li a {
     background-image: url(../img/v&a.png);
 }
 .main__portfolio__cards__card__content__title {
-    font-size: 1.9em;
+    font-size: 1.5em;
     color: #ff0534;
     letter-spacing: 2px;
     text-shadow: 2px 3px #010101;
     z-index: 100;
 }
 .main__portfolio__cards__card__content__txt {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: rgb(245, 245, 245);
     text-shadow: 3px 3px 2px #000;
     font-weight: 300;
@@ -558,7 +589,7 @@ background: #00ffe7;
 
 /* MAIN__CONTACT */
 .main__contact {
-    margin-top: 666px;
+    margin-top: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -818,6 +849,10 @@ and (max-device-width : 56.25em) {
         left: 30%;
     }
 
+    .main__about__container__img {
+        width: 111px;
+    }
+
     .main__about__container__name {
         font-size: .8em;
     }
@@ -838,6 +873,21 @@ and (max-device-width : 56.25em) {
 
     .main__about__container__btn-cv a {
         font-size: .9em;
+    }
+
+    .main__skills__technologies div {
+        padding: 10px 30px;
+    }
+
+    .main__skills__technologies img {
+        width: 3em;
+    }
+
+    .main__skills__technologies h3 {
+        transform: translate(0px,-100px);
+    }
+    .main__skills__technologies div:hover h3 {
+        transform: translate(0px,-115px);
     }
 
     .main__portfolio__cards__card {
